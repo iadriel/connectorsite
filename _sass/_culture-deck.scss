@@ -1,0 +1,55 @@
+.culture-deck {
+  background-image: url('images/bg-lines.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 868px;
+  display: flex;
+  align-items: center;
+  .bg {
+    position: relative;
+    &:before {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      content: '';
+      height: 411px;
+      width: 100%;
+      background-color: rgba($purple, 0.61);
+      display: block;
+    }
+    width: 100%;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    p {
+      margin-bottom: 48px;
+      color: #ffffff;
+      font-size: 1.25rem;
+      line-height: 2.313rem;
+      font-weight: 100;
+      font-style: italic
+    }
+  }
+
+  .button-culture-deck {
+    .btn {
+      text-shadow: 0 0.125rem 6rem rgba(2, 2, 2, 0.77);
+      color: #ffffff;
+      font-size: 1.5rem;
+      font-weight: 800;
+      line-height: 1.813rem;
+      padding: 13px 60px;
+    }
+  }
+
+  .button-culture-deck {
+    @media screen and (max-width: 910px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

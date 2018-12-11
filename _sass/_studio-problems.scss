@@ -1,0 +1,39 @@
+.studio-problems {
+  padding: 8% 0 4%;
+  background-color: $magenta;
+  .slide-problems {
+    h1 {
+      max-width: 1107px;
+      width: 100%;
+      font-family: "Montserrat";
+      font-size: 50px;
+      font-weight: 500;
+      line-height: 61px;
+      display: inline;
+    }
+  }
+  .slick-slide {
+    text-align: center;
+  }
+
+  @media screen and (max-width: 910px) {
+    .slide-problems {
+      padding: 8% 0 0;
+      h1 {
+        color: #ffffff;
+        font-size: 26px;
+        font-weight: 500;
+        line-height: 36px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 910px) {
+  .studio-problems {
+    .page-header {
+      h2 {
+        padding-bottom: 0;
+      }
+    }
+  }
+}

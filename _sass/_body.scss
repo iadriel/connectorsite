@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,300i,400,500,800|Open+Sans:300');
+
+body {
+  font-family: "Montserrat Light", -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #000000;
+  a {
+    color: #fff;
+    &:hover {
+      color: #fff;
+    }
+  }
+  & > canvas {
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    z-index: -2;
+  }
+}

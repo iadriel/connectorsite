@@ -1,0 +1,29 @@
+.page-header {
+  text-align: center;
+  margin-bottom: 70px;
+
+  h2 {
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 10.31px;
+    padding-bottom: 25px;
+    position: relative;
+    display: inline-block;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 10.31px;
+      height: 1px;
+      width: 100vw;
+    }
+  }
+
+  @media screen and (max-width: 910px) {
+    margin-bottom: 20px;
+  }
+}

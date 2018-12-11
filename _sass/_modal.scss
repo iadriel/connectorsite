@@ -1,0 +1,133 @@
+
+.modal {
+  display: none;
+  z-index: 999;
+}
+
+.modal.is-open {
+  display: block;
+}
+    
+
+.modal__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal__btn:focus,
+.modal__btn:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.modal__btn-primary {
+    background-color: #00449e;
+    color: #fff;
+}
+
+/**************************\
+    Demo Animation Style
+  \**************************/
+
+@keyframes mmfadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes mmfadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes mmslideIn {
+    from {
+        transform: translateY(15%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes mmslideOut {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10%);
+    }
+}
+
+.modal__container {
+    width: 819px;
+    max-width: 100%;
+    height: 661px;
+    box-shadow: 0 4px 18px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    border: 1px solid #63228b;
+    background-color: #000000;
+    padding: 125px 79px 56px;
+    position: relative;
+    p {
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 37px;
+        margin-bottom: 65px;
+    }
+    label {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      border: 0;
+    }
+    .mc-field-group {
+      margin-bottom: 4px;
+      input {
+        width: 100%;
+        box-shadow: 0 4px 18px 2px rgba(0, 0, 0, 0.5);
+        background-color: $purple;
+        border: 0;
+        line-height: 89px;
+        padding: 0 20px;
+        // Placeholder
+        &::placeholder {
+          color: #9c4ecb;
+        }
+      }
+      br {
+        display: none;
+      }
+    }
+    #mc-embedded-subscribe {
+      margin-top: 80px;
+      float: right;
+      @extend .btn-gradient
+    }
+    .close-icon {
+      color: #fff;
+      font-size: 33px;
+      top: 41px;
+      right:15px;
+      position: absolute;      
+    }
+}

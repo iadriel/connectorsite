@@ -1,0 +1,49 @@
+.wrapper {
+  .studio {
+    background-repeat: no-repeat;
+    background-size: cover;
+    .studio-home {
+      background-color: #000;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .studio-services {
+      // background-image: url('/images/smoke-bg-crop.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: bottom;
+    }
+    .studio-clients {
+      // background-image: url('/images/smoke-bg-crop.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: bottom;
+    }
+  }
+}
+
+#firstLine{
+  margin-top: 6px;
+}
+
+[data-aos='center-left'] {
+  opacity: 1;
+  transform: translateY(-1px);
+  transition-property: transform, opacity;
+
+  &.aos-animate {
+    opacity: 0;
+    transform: translate3d(100px, 0,0);
+  }
+}
+
+[data-aos='center-right'] {
+  opacity: 1;
+  transform: translateY(-1px);
+  transition-property: transform, opacity;
+
+  &.aos-animate {
+    opacity: 0;
+    transform: translate3d(-100px, 0,0);
+  }
+}

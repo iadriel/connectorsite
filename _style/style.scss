@@ -1,0 +1,328 @@
+/*
+Theme Name: Connector
+Author: Epic Awesome
+Description: Template made exclusivelly for Connector.
+Version: 1.0
+Text Domain: connector
+*/
+
+@import "../_sass/reset";
+@import "../_sass/variables";
+@import "../_sass/helpers";
+@import "../_sass/body";
+@import "../_sass/icons";
+@import "../_sass/slick";
+@import "../_sass/btn";
+@import "../_sass/top-menu";
+@import "../_sass/sidemenu";
+@import "../_sass/hero";
+@import "../_sass/page-header";
+@import "../_sass/section-header";
+@import "../_sass/cards";
+@import "../_sass/page-content";
+@import "../_sass/footer";
+@import "../_sass/menu-category";
+@import "../_sass/full-card-container";
+
+// Studio components
+@import "../_sass/studio-problems";
+@import "../_sass/studio-services";
+@import "../_sass/clients-slide";
+@import "../_sass/studio-case";
+@import "../_sass/studio-team";
+@import "../_sass/avatar-list";
+@import "../_sass/crew-member";
+@import "../_sass/studio-about";
+@import "../_sass/studio-how-we-work";
+@import "../_sass/culture-deck";
+@import "../_sass/studio-careers";
+@import "../_sass/studio-portfolio";
+@import "../_sass/studio-stories";
+@import "../_sass/studio-resources";
+@import "../_sass/studio-contact";
+@import "../_sass/page-404";
+@import "../_sass/modal";
+@import "../_sass/awards";
+
+// Pages
+@import "../_sass/home";
+@import "../_sass/studio";
+
+// Theme
+
+@import "../_sass/theme";
+
+/* IE11 */
+@media all and (-ms-high-contrast:none)
+{
+*::-ms-backdrop,
+[data-aos^=fade][data-aos^=fade],[data-aos^=zoom][data-aos^=zoom]{
+opacity: 1;
+}
+}
+
+.grid {
+    .grid-item {
+        width: calc(33.3333333% - 30px);
+        &.full {
+            width: calc(100% - 40px)
+        }
+        &.half {
+            width: calc(50% - 30px)
+        }
+    }
+}
+
+.fade-in-css {
+    opacity: 0.3;
+    transition: opacity 300ms ease-in;
+    &:hover {
+      opacity: 1;
+      transition: opacity 300ms ease-in;
+    }
+}
+@media (max-width: 575px){
+  #row-footer-one-span{
+    width: 290px;
+    margin: 0 auto 20px;
+    text-indent: 7px;
+  }
+  .social-icons{
+    width: 290px!important;
+      margin: 0 auto 20px!important;
+  }
+  .bookSpanimage{
+    height: 190px;
+    margin-top: -70px;
+    margin-bottom: 45px;
+  }
+  .culture-deck .content p {
+    font-size: 1rem!important;
+    line-height: 1.5rem!important;
+    margin-bottom: 20px;
+  }
+  .culture-deck .button-culture-deck .btn {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (max-width: 767px){
+  .bookSpanimage{
+    height: 34.6vw;
+    width: 40%;
+    margin: 0 auto;
+  }
+  .culture-deck .content p {
+    font-size: 1rem!important;
+    line-height: 1.5rem!important;
+    margin-bottom: 20px;
+  }
+  .culture-deck .button-culture-deck .btn {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (max-width: 767px){
+   .dsplnsmvw{
+    display: none;
+  }
+  .dsplngrvw{
+    display: block;
+  }
+}
+
+
+@media (min-width: 768px){
+   .dsplngrvw{
+    display: none;
+  }
+  .dsplnsmvw{
+    display: block;
+  }
+}
+
+
+
+@media (max-width: 425px){
+   .bookSpanimage {
+    height: 49.6vw;
+    width: 54%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px){
+
+  .culture-deck .content p{
+        width: 34vw;
+  }
+
+}
+
+
+@media screen and (max-width: 910px) {
+      .hero h1 {
+         font-size: 2.5vw!important;
+      letter-spacing: 5px!important; }
+      .grid .grid-item.half{
+        width: calc(100% - 40px)!important;
+      }
+}
+.btn-invisible{outline: none!important;}
+
+@media screen and (max-width: 425px) {
+  .full-card-container .controll-next.p-bottom {
+      width: 130px!important;
+      left: 5px!important;
+      margin-top: 20px!important;
+      position: relative!important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .avatar-list .media{
+    margin: 0 auto;
+  }
+  .avatar-list .avatar .name{
+        position: relative;
+        text-align: center;
+  }
+
+}
+@media screen and (max-width: 991px) {
+
+.crew-bio{
+        padding: 40px 25px 65px!important;
+  }
+  .crew-bio p {
+    margin-bottom: 1em !important;
+  }
+  .crew-bio .close {
+    right: 10px!important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .portfolio .grid .grid-item {
+    width: calc(100% - 10px);
+    position: relative !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin: 0 auto 20px;
+    top: 10px !important; }
+  .portfolio .grid {
+    position: relative !important;
+    height: auto !important; }
+  .portfolio .squares {
+    margin: 0 auto;
+  }
+}
+/**********************/
+  /*PORTFOLIO GRID*/
+/**********************/
+
+
+/*menu port grid*/
+.portfolio .menu-category {
+    padding-top: 75px!important;
+    padding-bottom: 35px!important;
+}
+
+.container-fluid .menu-category{text-indent: 16px!important}
+.container-fluid .squares{margin-left: 0!important;margin-right: 0!important; }
+.col-centered {
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+}
+.centeringSpanPort{
+    width: 30%!important;
+    float: left!important;
+    margin-left: 2.5%!important;
+    clear: none!important;
+    padding: 0!important;
+    position: relative!important;
+    margin-top: 27px!important;
+   left: 0!important;
+   top: 0!important;
+}
+.spamROWar {
+    margin-right: 0px!important;
+    margin-left: 0px!important;
+}
+
+.spamROWar .grid{height: auto!important;}
+
+.spamROWar .centeringSpanPort:nth-child(3n+1){
+    clear:left!important;
+}
+
+@media screen and (max-width: 767px) {
+  .centeringSpanPort {
+      width: 100%!important;
+      margin-left: 0!important;
+  }
+}
+
+.footer-page{clear: both!important;}
+
+
+/*STORIES HERO*/
+
+.studio-portfolio .content h1{
+  width: 70%;
+  margin:0 auto!important;
+}
+@media screen and (max-width: 499px) {
+  .studio-portfolio .content h1{
+    width: 90%;
+  }
+  .top-menu .mobile-menu{
+    padding: 0!important;
+  }
+  .top-menu .logo {
+    text-indent: -19px !important;
+}
+}
+.portfolio .squares a{
+  position: relative;
+}
+.h2PortTitle h2{
+   position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  font-size: 20px;
+}
+.h2PortTitle{
+  text-align: center;
+  /*border: 1px red solid;*/
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  opacity: 0;
+  vertical-align: middle;
+  display: table-cell;
+     -webkit-transition: opacity 100ms ease-in;
+    -o-transition: opacity 100ms ease-in;
+    transition: opacity 100ms ease-in;
+}
+.h2PortTitle:hover{
+  opacity: 1;
+      -webkit-transition: opacity 100ms ease-in;
+    -o-transition: opacity 100ms ease-in;
+    transition: opacity 100ms ease-in;
+}
+.card-footer{
+  padding-bottom: 30px;
+  position: relative;
+}
+.card-footer img{
+        width: 35px!important;
+    height: 35px!important;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }

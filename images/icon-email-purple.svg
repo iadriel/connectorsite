@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="20px" viewBox="0 0 29 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Mail us</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Studio-Contact" transform="translate(-253.000000, -1204.000000)">
+            <g id="Nav">
+                <g id="Mail-us" transform="translate(193.000000, 1172.000000)">
+                    <g transform="translate(60.000000, 32.000000)">
+                        <path d="M27.6190476,0 L1.38095238,0 C0.618666667,0 0,0.56 0,1.25 L0,18.75 C0,19.44 0.618666667,20 1.38095238,20 L27.6190476,20 C28.3813333,20 29,19.44 29,18.75 L29,1.25 C29,0.56 28.3813333,0 27.6190476,0 Z M1.38095238,18.75 L27.6190476,18.75 L27.6190476,1.25 L1.38095238,1.25 L1.38095238,18.75 Z" id="Fill-3" fill="#63228B" fill-rule="evenodd"></path>
+                        <polyline id="Stroke-5" stroke="#63228B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="28.3095238 3.75 14.4482143 13.125 0.69047619 3.75"></polyline>
+                        <path d="M21.4047619,13.125 L27.6190476,18.75" id="Stroke-7" stroke="#63228B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M7.5952381,13.125 L1.38095238,18.75" id="Stroke-9" stroke="#63228B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

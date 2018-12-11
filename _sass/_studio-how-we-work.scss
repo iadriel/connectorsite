@@ -1,0 +1,91 @@
+.studio-how-we-work {
+  padding: 50px 0 83px;
+  .page-header {
+    position: relative;
+  }
+  .half-circles {
+    height: 450px;
+    text-align: center;
+    padding-top: 150px;
+    position: relative;
+    .circle {
+      transition: background-color 200ms ease-in;
+    }
+    &.top {
+      .circle {
+        position: absolute;
+        top: -25px;
+        left: 0;
+        right: 0;
+        width: 50px;
+        height: 50px;
+        border: 2px solid $magenta;
+        border-radius: 100%;
+        background-color: #000000;
+        margin: auto;
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: calc(100% + 1px);
+        height: 50%;
+        border-top: 1px solid $magenta;
+        border-left: 1px solid $magenta;
+        border-right: 1px solid $magenta;
+        border-top-left-radius: 210px;
+        border-top-right-radius: 210px;
+      }
+    }
+    h1 {
+      color: $magenta;
+      font-family: "Montserrat";
+      font-size: 43px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: -0.65px;
+    }
+    p {
+      color: #ffffff;
+      color: $magenta;
+      font-family: "Montserrat";
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 32px;
+      color: #ffffff;
+    }
+  }
+
+  @media screen and (max-width: 780px) {
+    .half-circles {
+      padding-top: 0px;
+      max-height: 100vw;
+      display: flex!important;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      border: 2px solid $magenta;
+      border-radius: 100%;
+      margin-bottom: 30px;
+      .circle {
+        display: none;
+      }
+
+      &.top,
+      &.bottom {
+        &:before,
+        &:after {
+          display: none;
+        }
+      }
+      h1 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}

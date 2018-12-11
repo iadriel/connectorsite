@@ -1,0 +1,168 @@
+@mixin pageHeader($color) {
+  hr {
+    border-color: $color;
+    margin: 0 10px 0 0;
+  }
+}
+
+hr {
+  border-color: #d52063;
+  margin: 0 10px 0 0;
+}
+
+@mixin halfCircles($color) {
+  .half-circles {
+    &.top {
+      .circle {
+        border: 2px solid $color;
+      }
+      &:before {
+        border-top: 1px solid $color;
+        border-left: 1px solid $color;
+        border-right: 1px solid $color;
+      }
+    }
+    &.bottom {
+      .circle {
+        border: 2px solid $color;
+      }
+      &:before {
+        border-bottom: 1px solid $color;
+        border-left: 1px solid $color;
+        border-right: 1px solid $color;
+      }
+    }
+    &:hover {
+      .circle {
+        background-color: $color;
+      }
+    }
+    h1 {
+      color: $color;
+    }
+  }
+}
+
+@mixin gradientBtn($color1, $color2, $textColor) {
+  .btn-gradient {
+    background-image: linear-gradient(257deg, $color1 0%, $color2 100%);
+    color: $textColor;
+  }
+}
+
+@mixin topMenu($color1, $color2) {
+  .top-menu {
+    .menu-links {
+      a {
+        &.active {
+          border-radius: 15px;
+          padding: 0 10px;
+          background-image: linear-gradient(227deg, $color1 0%, $color2 100%);
+        }
+        &:before {
+          background-image: linear-gradient(257deg, $color1 0%, $color2 100%);
+        }
+      }
+    }
+    .search {
+      &.show {
+        .search-container {
+          border: 2px solid $color2;
+        }
+      }
+    }
+  }
+}
+
+@mixin overlay($color) {
+  .overlay {
+    height: 200vh;
+    width: 0;
+    background: $color;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 300;
+  }
+}
+
+@mixin sidebar-colors($textcolor, $gradient-start, $gradient-end, $bgcolor, $border ) {
+  .side-menu {
+    background-color: $bgcolor;
+    .close-menu {
+      fill: $textcolor;
+    }
+    .top-logo {
+      .logo {
+        fill: $textcolor;
+      }
+      .lettering {
+        fill: $textcolor;
+      }
+    }
+    address {
+      color: $textcolor;
+    }
+    .social-icons {
+      fill: $textcolor;
+    }
+    nav {
+      a {
+        color: $textcolor;
+        border-top: 1px solid rgba($color: $textcolor, $alpha: 0.21);
+        &:last-child {
+          border-bottom: 1px solid rgba($color: $border, $alpha: 0.21);
+        }
+        &.active {
+          &:before {
+            background-image: linear-gradient(59deg, $gradient-start 0%, $gradient-end 100%);
+
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin homeContainers($color) {
+  .studio-problems {
+    background-color: $color;
+  }
+  .studio-case {
+    background-color: rgba($color, 0.3);
+  }
+}
+
+
+.yellow-theme {
+  @include overlay($yellow);
+  @include pageHeader($yellow);
+  @include halfCircles($yellow);
+  @include homeContainers($yellow);
+  @include gradientBtn(#622c88, $yellow, #000);
+  @include topMenu(#622c88, $yellow);
+  @include sidebar-colors($purple, #622c88, $yellow, $yellow, #fff );
+
+}
+
+.green-theme {
+  @include overlay($green);
+  @include pageHeader($green);
+  @include halfCircles($green);
+  @include homeContainers($green);
+  @include gradientBtn(#622c88, $green, #fff);
+  @include topMenu(#622c88, $green);
+  @include sidebar-colors(#fff, #622c88, $green, $green, #fff );
+}
+
+.magenta-theme {
+  @include overlay($magenta);
+  @include pageHeader($magenta);
+  @include halfCircles($magenta);
+  @include homeContainers($magenta);
+  @include gradientBtn(#622c88, $magenta, #fff);
+  @include topMenu(#622c88, $magenta);
+  @include sidebar-colors(#fff, #622c88, $magenta, $magenta, #fff );
+
+}

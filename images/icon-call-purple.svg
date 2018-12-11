@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="37px" viewBox="0 0 22 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Phone</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.000183333333 0 22 0 22 37 0.000183333333 37"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Studio-Contact" transform="translate(-253.000000, -1033.000000)">
+            <g id="Nav">
+                <g id="call-us" transform="translate(193.000000, 1015.000000)">
+                    <g id="Phone" transform="translate(60.000000, 18.000000)">
+                        <g id="Group-3" stroke-width="1" fill-rule="evenodd">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Clip-2"></g>
+                            <path d="M16.5001833,0 L5.50018333,0 C2.46693333,0 0.000183333333,2.37064286 0.000183333333,5.28571429 L0.000183333333,31.7142857 C0.000183333333,34.6293571 2.46693333,37 5.50018333,37 L16.5001833,37 C19.5334333,37 22.0001833,34.6293571 22.0001833,31.7142857 L22.0001833,5.28571429 C22.0001833,2.37064286 19.5334333,0 16.5001833,0 M16.5001833,1.76190476 C18.5251,1.76190476 20.16685,3.33969048 20.16685,5.28571429 L20.16685,31.7142857 C20.16685,33.6603095 18.5251,35.2380952 16.5001833,35.2380952 L5.50018333,35.2380952 C3.47526667,35.2380952 1.83351667,33.6603095 1.83351667,31.7142857 L1.83351667,5.28571429 C1.83351667,3.33969048 3.47526667,1.76190476 5.50018333,1.76190476 L16.5001833,1.76190476" id="Fill-1" fill="#63228B" mask="url(#mask-2)"></path>
+                        </g>
+                        <path d="M0.91685,5.72619048 L21.0835167,5.72619048" id="Stroke-4" stroke="#63228B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M0.91685,29.5119048 L21.0835167,29.5119048" id="Stroke-6" stroke="#63228B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M11.91685,33.0357143 C11.91685,33.7660238 11.3017667,34.3571429 10.54185,34.3571429 C9.78193333,34.3571429 9.16685,33.7660238 9.16685,33.0357143 C9.16685,32.3054048 9.78193333,31.7142857 10.54185,31.7142857 C11.3017667,31.7142857 11.91685,32.3054048 11.91685,33.0357143" id="Fill-8" fill="#63228B" fill-rule="evenodd"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

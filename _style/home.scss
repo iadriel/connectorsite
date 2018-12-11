@@ -1,0 +1,17 @@
+@import "../_sass/reset";
+@import "../_sass/variables";
+@import "../_sass/helpers";
+@import "../_sass/body";
+@import "../_sass/icons";
+@import "../_sass/btn";
+@import "../_sass/home";
+@import "../_sass/theme";
+
+/* IE11 */
+@media all and (-ms-high-contrast:none)
+{
+*::-ms-backdrop,
+[data-aos^=fade][data-aos^=fade],[data-aos^=zoom][data-aos^=zoom]{
+opacity: 1;
+}
+}

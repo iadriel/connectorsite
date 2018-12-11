@@ -1,0 +1,99 @@
+.hero {
+  &.studio-portfolio {
+    height: 722px;
+    background-image: url('images/hero-bg-portfolio.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 860px;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  @media screen and (max-width: 910px) {
+    &.studio-portfolio {
+      height: 100%;
+      max-height: 320px;
+      min-height: 320px;
+      margin-top: 20px;
+      h3 {
+        font-size: 12px;
+      }
+      h1 {
+        font-size: 23px;
+      }
+      .slick-dots {
+        display: none!important;
+      }
+    }
+  }
+}
+
+.portfolio {
+  // background-image: url('/images/portfolio/smoke-bg-portfolio.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 100px;
+  .menu-category {
+    padding-top: 115px;
+  }
+  .squares {
+    width: 100%;
+    img {
+      opacity: 0.3;
+      transition: opacity 300ms ease-in;
+      &:hover {
+        opacity: 1;
+        transition: opacity 300ms ease-in;
+      }
+    }
+    a {
+      display: block;
+    }
+  }
+
+
+
+  @media screen and (max-width: 910px) {
+    .squares {
+      display: block;
+    }
+    .header {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      .btn-invisible {
+        text-align: left;
+        box-shadow: 0 4px 18px 2px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        background-color: #230436;
+        color: #dcdcdc;
+        font-family: "Montserrat";
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 51px;
+        margin-bottom: 10px;
+        padding-left: 45px;
+        position: relative;
+        &:after {
+          content: '+';
+          position: absolute;
+          top: 0;
+          right: 13px;
+          bottom: 0;
+          color: #dcdcdc;
+          font-family: "Montserrat";
+          font-size: 27px;
+          font-weight: 300;
+        }
+      }
+    }
+    .title {
+      h3 {
+        font-size: 14px;
+        small {
+          font-size: 12px;
+          line-height: 21px;
+        }
+      }
+    }
+  }
+}

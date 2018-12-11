@@ -1,0 +1,76 @@
+.studio-team {
+  padding: 115px 0 65px;
+  .page-header {
+    position: relative;
+  }
+
+  .name {
+      text-shadow: 0 2px 96px rgba(2, 2, 2, 0.77);
+      color: #ffffff;
+      font-family: "Montserrat";
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 27px;
+      letter-spacing: 3px;
+      margin-top: 50px;
+      font-style: italic;
+      small {
+        font-family: "Montserrat";
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 3px;
+        display: block;
+      }
+
+  }
+
+
+  .slick-slide {
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 420px;
+    text-align: center;
+    position: relative;
+    a {
+      position: relative;
+    }
+    .name {
+      visibility: hidden;
+    }
+    .media {
+      transform: scale(0.7);
+      filter: grayscale(1);
+      border-radius: 100%;
+      width: 315px;
+      height: 315px;
+      overflow: hidden;
+      position: relative;
+      video,
+      img {
+        max-height: 315px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    &.slick-center {
+      .name {
+        visibility: visible;
+      }
+      .media {
+        transform: scale(1);
+        width: 315px;
+        height: 315px;
+        filter: grayscale(0)
+      }
+    }
+  }
+  .slick-arrow {
+    margin-top: 135px;
+    z-index: 999;
+  }
+  @media screen and (max-width: 910px) {
+    display: none;
+  }
+}
